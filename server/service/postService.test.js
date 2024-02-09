@@ -9,5 +9,7 @@ test('Should save post', async() => {
         title: generate(),
         content: generate()
     })
-    console.log(post);
+    expect(typeof post.insertId).toBe("number")
+    postService.deletePost(post.insertId)
+    // console.log(post.insertId);
 })

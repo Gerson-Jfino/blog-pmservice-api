@@ -6,6 +6,9 @@ const postService = {
     }, 
     savePost: (post) => {
         return postsData.savePost(post)
+    },
+    deletePost: (id) => {
+        return postsData.deletePost(id)
     }
 }
 
